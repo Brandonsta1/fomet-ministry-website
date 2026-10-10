@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173c32">
+  <meta name="description" content="Discover FOMET Ministry, our events, Bible study resources and ways to connect.">
+  <title>FOMET Ministry | Know Christ, Make Him Known</title>
+  <style>
+    :root {
+      --green: #173c32;
+      --gold: #d6b675;
+      --cream: #f8f5ed;
+      --ink: #25332d;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    a { color: inherit; }
+
+    header {
+      background: var(--green);
+      color: var(--white);
+      padding: 18px 6%;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: .9rem;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .hero {
+      background: var(--green);
+      color: var(--white);
+      padding: 75px 7% 85px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: .8rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 7vw, 4.5rem);
+      line-height: 1.12;
+      margin: 16px auto;
+      max-width: 850px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 20px auto;
+      color: #e5ebe6;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--green);
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 8px 5px;
+    }
+
+    .button.outline {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--white);
+    }
+
+    main { padding: 20px 6% 60px; }
+
+    .intro {
+      text-align: center;
+      max-width: 750px;
+      margin: 55px auto;
+    }
+
+    .intro h2, .section-heading {
+      color: var(--green);
+    }
+
+    .section-heading { text-align: center; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 30px 0 55px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 24px;
+      border-radius: 10px;
+      border: 1px solid #e8e3d8;
+    }
+
+    .card h3 { color: var(--green); }
+
+    .card a {
+      color: #315e48;
+      font-weight: bold;
+    }
+
+    .verse {
+      text-align: center;
+      background: #e9e4d5;
+      padding: 35px 20px;
+      border-radius: 10px;
+      margin: 40px 0;
+    }
+
+    .verse p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.15rem;
+      font-style: italic;
+    }
+
+    footer {
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 6%;
+    }
+
+    footer p { margin: 6px; }
+
+    footer a { color: var(--gold); }
+
+    @media (max-width: 500px) {
+      header { padding: 16px 5%; }
+      .nav { justify-content: center; }
+      nav { justify-content: center; gap: 12px; }
+      .hero { padding: 55px 5%; }
+      main { padding-left: 5%; padding-right: 5%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">FOMET MINISTRY</div>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#resources">Resources</a>
+        <a href="#giving">Giving</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="eyebrow">Welcome to FOMET</div>
+    <h1>Know Christ.<br>Make Him Known.</h1>
+    <p>
+      Equipping people to grow in Christ, share His love,
+      and help others discover the life-changing message of the Gospel.
+    </p>
+    <a class="button" href="#about">Discover FOMET</a>
+    <a class="button outline" href="#events">Explore Our Events</a>
+  </section>
+
+  <main>
+    <section class="intro" id="about">
+      <div class="eyebrow">Who We Are</div>
+      <h2>Growing Together in Christ</h2>
+      <p>
+        FOMET is a Christian ministry committed to knowing Christ,
+        making Him known, and helping others do the same.
+        Through fellowship, discipleship, prayer, mentorship and outreach,
+        we seek to equip people to serve Christ faithfully.
+      </p>
+      <p><em>This introduction is a draft. FOMET leadership should approve the official ministry description.</em></p>
+    </section>
+
+    <section id="events">
+      <h2 class="section-heading">Ministry Events</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Bible Study</h3>
+          <p>Growing together through God's Word and Christian fellowship.</p>
+          <p>Check our official announcements for upcoming sessions.</p>
+        </article>
+        <article class="card">
+          <h3>Prayer Meetings</h3>
+          <p>Coming together in prayer, worship and encouragement.</p>
+          <p>Follow FOMET's official channels for meeting details.</p>
+        </article>
+        <article class="card">
+          <h3>Retreats & Fellowship</h3>
+          <p>Building relationships and growing in our walk with Christ.</p>
+          <p>Dates and registration details will be announced here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2 class="section-heading">Resources & Publications</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>FOMET Newsletter</h3>
+          <p>Read ministry updates, testimonies and our annual review.</p>
+          <p>Our newsletter link will be added after publication approval.</p>
+        </article>
+        <article class="card">
+          <h3>Bible Study Resources</h3>
+          <p>Materials to support personal Bible study and discipleship.</p>
+          <p>Approved study materials will be available here.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="verse">
+      <p>
+        "Commit thy works unto the LORD; and thy thoughts
+        shall be established."
+      </p>
+      <strong>Proverbs 16:3 (KJV)</strong>
+    </section>
+
+    <section id="giving">
+      <h2 class="section-heading">Support the Ministry</h2>
+      <div class="card">
+        <p>
+          Thank you for your heart to support the work of the ministry.
+          For official giving instructions, please contact FOMET's
+          authorised leadership.
+        </p>
+        <p>
+          Verified giving methods and payment details will be published
+          here after confirmation by the ministry's leadership.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p><strong>FOMET MINISTRY</strong></p>
+    <p>Know Christ. Make Him Known.</p>
+    <p>Official contacts and social media links will be added after approval.</p>
+    <p>&copy; <span id="year"></span> FOMET Ministry</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+  </html>
+      
